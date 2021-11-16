@@ -34,6 +34,21 @@ model library: https://github.com/iCharlesZ/vscode-live2d-models -->
 
 **如果实在介意此提示请不要安装此扩展！！！**
 
+## 解决【不再提示】警告
+因为上述实现方法直接修改 `Vscode` 的 `JavaScript` 文件，重启 `Vscode` 后有可能会有 `code` 文件错误的警告，我们来解决这种情况：
+### 方法一
+1.  开命令行，安装 `Fix VSCode Checksums`，键入命令：
+```
+code --install-extension lehni.vscode-fix-checksums
+```
+2.  打开 `Vscode` ，快捷键 `Ctrl + Shift + P` 输入命令：
+
+```
+Fix Checksums:Apply
+```
+### 方法二
+打开 VSCode 扩展搜索 `Fix VSCode Checksums` 插件
+![](./assets/fix.png)
 <br />
 
 ## Extended Settings 扩展设置
