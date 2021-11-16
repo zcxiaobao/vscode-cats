@@ -1,0 +1,123 @@
+{
+  "name": "vscode-cats",
+  "displayName": "vscode-cats",
+  "description": "摸鱼撸猫神器",
+  "version": "0.0.1",
+  "publisher": "zcxiaobao",
+  "engines": {
+    "vscode": "^1.62.2"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "assets/logo.png",
+  "keywords": [
+    "vscode撸猫",
+    "撸猫",
+    "喵咪",
+    "live2d"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": [
+      {
+        "title": "喵咪配置",
+        "type": "Object",
+        "properties": {
+          "vscode-cats.enabled": {
+            "type": "boolean",
+            "default": true,
+            "description": "是否启用喵咪"
+          },
+          "vscode-cats.model": {
+            "type": "string",
+            "enum": [
+              "tororo",
+              "hijiki"
+            ],
+            "default": "tororo",
+            "description": "选那只喵咪"
+          },
+          "vscode-cats.modelWidth": {
+            "type": "integer",
+            "maximum": 1000,
+            "minimum": 50,
+            "default": 100,
+            "description": "喵咪宽度 default: 100"
+          },
+          "vscode-cats.modelHeight": {
+            "type": "integer",
+            "maximum": 1000,
+            "minimum": 50,
+            "default": 100,
+            "description": "喵咪高度 default: 100"
+          },
+          "vscode-cats.moveX": {
+            "type": "integer",
+            "maximum": 2000,
+            "minimum": -1000,
+            "default": 0,
+            "description": "喵咪水平位置 default: 0"
+          },
+          "vscode-cats.moveY": {
+            "type": "integer",
+            "maximum": 2000,
+            "minimum": -1000,
+            "default": 0,
+            "description": "喵咪垂直位置 default: 0"
+          },
+          "vscode-cats.opacity": {
+            "type": "number",
+            "maximum": 1,
+            "minimum": 0.1,
+            "default": 1,
+            "description": "喵咪透明度"
+          },
+          "vscode-cats.position": {
+            "type": "string",
+            "enum": [
+              "right",
+              "left"
+            ],
+            "default": "right",
+            "description": "喵咪位置"
+          }
+        }
+      }
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/zcxiaobao/vscode-cats/issues",
+    "email": "444186976@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zcxiaobao/vscode-cats.git"
+  },
+  "homepage": "https://github.com/zcxiaobao/vscode-cats.git/blob/master/README.md",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "vscode:uninstall": "node ./out/uninstall",
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.47.0",
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.11.0",
+    "eslint": "^6.8.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "glob": "^7.1.6",
+    "mocha": "^7.1.2",
+    "typescript": "^3.8.3",
+    "vscode-test": "^1.3.0"
+  }
+}
