@@ -2,7 +2,7 @@
   "name": "vscode-cats",
   "displayName": "vscode-cats",
   "description": "摸鱼撸猫神器",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "publisher": "zcxiaobao",
   "engines": {
     "vscode": "^1.62.2"

@@ -18,7 +18,6 @@ model library: https://github.com/iCharlesZ/vscode-live2d-models -->
 
 ## Install and Uninstall 安装与卸载
 
-需要 VSCode 1.47.0 以上版本才可以安装此插件！
 
 如果是以 System 身份安装的 VSCode，则需要以管理员身份运行 VSCode 才可以正常使用喵咪插件。
 
@@ -67,7 +66,9 @@ Fix Checksums:Apply
 <br />
 
 ## Release Notes 版本说明
+### 0.1.0 | 2021-11-16
 
+- 添加解决【不再提示】方案
 
 ### 0.0.1 | 2021-11-16
 
