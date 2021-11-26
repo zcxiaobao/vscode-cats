@@ -82,6 +82,7 @@ Fix Checksums:Apply
 
 * [live2d-widget](https://github.com/stevenjoezhang/live2d-widget)
 * [vscode-background](https://github.com/shalldie/vscode-background)
+* [vscode-live2d](https://github.com/iCharlesZ/vscode-live2d)
 
 <br />
 
